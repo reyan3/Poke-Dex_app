@@ -1,0 +1,404 @@
+body {
+    background: #e8eef9;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh auto;
+    width: 20%;
+    padding: 25px 20px;
+    border-radius: 15px;
+    gap: 15px;
+    background: white;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    animation: fade 0.6s ease-in-out;
+    transform: scale(1, 1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02, 1.02);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.pkmn-inp {
+    display: flex;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+input,
+button {
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input {
+    outline: none;
+    padding: 10px;
+    background: rgb(240, 240, 240);
+}
+
+input:focus {
+    background: #fff;
+    border: 1px solid #888;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    padding: 0 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #88888859;
+}
+
+.pkmn-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pkmn-image {
+    width: 130px;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+    height: 130px;
+}
+
+.darkImage {
+    filter: drop-shadow(0px 3px 6px rgba(255, 255, 255, 0.556));
+}
+
+.frst-type,
+.scnd-type {
+    padding: 1px 7px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pkmn-type {
+    display: flex;
+    gap: 5px;
+}
+
+
+.fire {
+    background-color: orange;
+}
+
+.water {
+    background-color: #7575ff;
+}
+
+.electric {
+    background-color: yellow;
+}
+
+.bug {
+    background-color: greenyellow;
+}
+
+.rock {
+    background-color: burlywood;
+}
+
+.grass {
+    background-color: rgb(17, 188, 17);
+}
+
+.ice {
+    background-color: lightblue;
+}
+
+.steel {
+    background-color: rgb(203, 201, 201);
+}
+
+.ground {
+    background-color: rgb(165, 99, 42);
+}
+
+.fairy {
+    background-color: violet;
+}
+
+.flying {
+    background-color: rgb(204, 183, 226);
+}
+
+.normal {
+    background-color: grey;
+}
+
+.fighting {
+    background-color: rgb(232 150 189);
+}
+
+.psychic {
+    background-color: pink;
+}
+
+.poison {
+    background-color: rgb(242, 0, 255);
+}
+
+.dragon {
+    background-color: rgb(148, 165, 242);
+}
+
+.ghost {
+    background-color: rgb(131 37 218);
+}
+
+.dark {
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+
+.loading {
+    position: fixed;
+    /* covers whole screen */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* dim overlay */
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    animation: fadeIn 0.3s ease-in-out;
+    /* smooth entry */
+}
+
+.loading img {
+    margin: 45vh auto;
+    height: 80px;
+    object-fit: contain;
+}
+
+/*fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.error img {
+    width: 18vw;
+    filter: opacity(0.5);
+}
+
+.pkmn-cry {
+    background-color: #dae8e6;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.pkmn-cry:hover {
+    background-color: #c7f6ef;
+}
+
+.darkOn {
+    background-color: #181717;
+    transition: all 0.5s ease-in-out;
+}
+
+.darklight-btn {
+    border-radius: 22px;
+    padding: 5px 9px;
+    font-size: 23px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.darklight-btn:hover {
+    transform: scale(1.10);
+}
+
+.darkCont {
+    background-color: #626262;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.816);
+}
+
+.darkTypng {
+    text-shadow: 0px 0px 6px black;
+}
+
+.darkSubmit:hover {
+    background-color: white;
+}
+
+.darkError {
+    filter: invert(1) !important;
+}
+
+.hamburger {
+    display: none;
+}
+
+.slider {
+    display: none;
+}
+
+.components {
+    display: contents;
+}
+
+
+
+/* for mobile devices */
+@media(min-width: 300px) and (max-width: 500px) {
+    .hamburger {
+        display: flex;
+        transform: scale(1, 1);
+    }
+
+    .hamburger:hover {
+        transform: scale(1.10, 1.10);
+    }
+
+    .slider {
+        display: flex;
+        position: fixed;
+        z-index: 100;
+        left: -100%;
+        top: 0;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+        opacity: 0;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        box-shadow: 6px 0 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .SliderContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 10px;
+    }
+
+    .components {
+        display: none;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .exit {
+        margin-left: 42vw;
+        margin-top: 4px;
+        transform: scale(1, 1);
+    }
+
+    .exit:hover {
+        transform: scale(1.15, 1.15);
+    }
+
+    .openSlider {
+        left: 0;
+        opacity: 1;
+    }
+
+    .Footer {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 15px 26px;
+        width: 73%;
+    }
+
+    button span {
+        display: none;
+    }
+
+    .Sliderwhite {
+        color: white;
+    }
+
+    .error img {
+        width: 65vw;
+    }
+
+    .about-container {
+        margin: 0 auto;
+        border-radius: 0;
+        box-shadow: none;
+        height: 78vh;
+        overflow-y: auto;
+    }
+
+    .darkabout {
+        background: black;
+        color: white;
+    }
+
+    .about-footer {
+        margin-top: 32px;
+    }
+
+    .support-container {
+        padding: 0;
+        border-radius: 0;
+        width: 80vw;
+        margin: 30vh auto;
+        background: none;
+        box-shadow: none;
+    }
+
+    .darksupport {
+        color: white;
+    }
+
+    .darksupport.support-container p {
+        color: #afafaf;
+    }
+
+    .about-features li {
+        margin: 18px 0 0 0;
+    }
+
+    .links:hover{
+        text-decoration: none;
+    }
+}
+
+/* For Tablets and Ipad */
+@media(min-width:500px) and (max-width:1360px) {
+    .container {
+        width: 50%;
+    }
+
+    .error img {
+        width: 40vw;
+    }
+}
