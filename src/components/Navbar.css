@@ -1,0 +1,59 @@
+.Nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 28px;
+    background: linear-gradient(43deg, #EE1515, #e7e8e9);
+    animation: slideDown 0.6s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Navbar links */
+.Nav-container ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    padding-right: 6vw;
+}
+
+.links {
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: #670a0a;
+    transform: scale(1.05);
+}
+
+/* Logo / Name section */
+.Name {
+    display: flex;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    color: white;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Name:hover {
+    transform: scale(1.08);
+}
