@@ -29,3 +29,7 @@ Powered by the [PokéAPI](https://pokeapi.co/).
 - **React Icons** – for dark/light mode + menu icons  
 - **PokéAPI** – to fetch Pokémon data  
 - **CSS** – custom responsive styling  
+
+
+## 🌐 Live Demo
+👉 [Pok-é-Dex](https://pok-e-dex.netlify.app/)
