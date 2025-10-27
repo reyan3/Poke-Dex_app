@@ -1,0 +1,41 @@
+.Footer {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  color: #222;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  position: relative;
+  bottom: 0;
+}
+
+.darkOn .Footer {
+  background: rgba(22, 27, 34, 0.85);
+  color: #f1f1f1;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 -2px 6px rgba(255, 255, 255, 0.05);
+}
+
+/* ===========================
+   RESPONSIVE BEHAVIOR
+=========================== */
+@media (max-width: 768px) {
+  .Footer {
+    font-size: 0.9rem;
+    padding: 0.8rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .Footer {
+    font-size: 0.85rem;
+    padding: 0.7rem 0;
+  }
+}
+

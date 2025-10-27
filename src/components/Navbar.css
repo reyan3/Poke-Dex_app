@@ -1,0 +1,237 @@
+.Nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.7rem 2rem;
+  transition: all 0.4s ease;
+}
+
+.darkOn .Nav-container {
+  background: rgba(22, 27, 34, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+/* ===========================
+   LOGO + NAME
+=========================== */
+.Name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  user-select: none;
+}
+
+.darkOn .Name {
+  color: #f5f5f5;
+}
+
+.Name img {
+  width: 28px;
+  height: 28px;
+}
+
+/* ===========================
+   DESKTOP NAV LINKS
+=========================== */
+.components {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.components ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.links:hover li {
+  color: #ffcb05;
+}
+
+.links li {
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.3s ease;
+}
+
+/* Animated underline on hover */
+.links li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0%;
+  background: #ffcb05;
+  transition: width 0.3s ease;
+}
+
+.links li:hover::after {
+  width: 100%;
+}
+
+/* Dark mode link styling */
+.darkOn .links li {
+  color: #f1f1f1;
+}
+
+.darkOn .links li:hover {
+  color: #ffcb05;
+}
+
+/* ===========================
+   HAMBURGER ICON
+=========================== */
+.hamburger {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.darkOn .hamburger {
+  color: #f1f1f1;
+}
+
+/* ===========================
+   SLIDER MENU (Mobile)
+=========================== */
+.slider {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.4s ease;
+  z-index: 1000;
+}
+
+.darkOn .slider {
+  background: rgba(22, 27, 34, 0.95);
+  box-shadow: 2px 0 12px rgba(255, 255, 255, 0.05);
+}
+
+.openSlider {
+  left: 0;
+}
+
+.SliderContainer {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.SliderContainer ul {
+  list-style: none;
+  padding: 0;
+  width: fit-content;
+  margin-top: 3rem;
+}
+
+.SliderContainer .links {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  color: #222;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.SliderContainer .links:hover {
+  color: #ffcb05;
+}
+
+.darkOn .SliderContainer .links {
+  color: #f5f5f5;
+}
+
+.exit {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.4rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #222;
+}
+
+.darkOn .exit {
+  color: #f5f5f5;
+}
+
+/* ===========================
+   RESPONSIVE BEHAVIOR
+=========================== */
+@media (max-width: 900px) {
+  .components {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .Name span {
+    font-size: 1.2rem;
+  }
+
+  .Nav-container {
+    justify-content: space-between;
+    padding: 0.7rem 3.5rem;
+  }
+
+  .slider {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .SliderContainer {
+    padding: 1.5rem 1rem;
+  }
+
+  .SliderContainer ul {
+    margin-top: 2rem;
+  }
+
+  .SliderContainer .links {
+    font-size: 1rem;
+  }
+
+  .Name span {
+    font-size: 1.1rem;
+  }
+
+  .Name img {
+    width: 24px;
+  }
+}

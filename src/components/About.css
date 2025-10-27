@@ -1,0 +1,117 @@
+.about-container {
+  width: 70%;
+  margin: 41px auto;
+  background: white;
+  color: #1c1c1c;
+  padding: 40px 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Title */
+.about-title {
+  text-align: center;
+  font-size: 2.2rem;
+  background: var(--accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+/* Paragraph Text */
+.about-text {
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Features Section */
+.about-features {
+  margin-top: 25px;
+  background: linear-gradient(45deg, #f7f7f7, #ffffff);
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-features h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 15px;
+  gap: 6px;
+}
+
+.about-features ul {
+  list-style: none;
+}
+
+.about-features li {
+  margin: 10px 0;
+  font-size: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.about-features li:hover {
+  transform: translateX(5px);
+}
+
+/* Footer Text */
+.about-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.95rem;
+  color: grey;
+}
+
+.about-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.about-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode */
+.darkabout {
+  background: #181717;
+  color: #f1f1f1;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.3);
+}
+
+.darkabout .about-features {
+  background: #2a2a2a;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.15);
+}
+
+.darkabout .about-footer a {
+  color: var(--accent);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
