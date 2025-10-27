@@ -37,6 +37,7 @@ Search any Pokémon, view detailed stats, discover abilities, and even hear thei
 
 ⚡ Live data powered by the PokéAPI
 
+
 💻 Tech Stack
 
 ⚛️ React.js	Core frontend framework
@@ -59,11 +60,13 @@ Search any Pokémon, view detailed stats, discover abilities, and even hear thei
 
 🌈 Better color palette, hover effects, and loading states
 
+
 🌐 Live Demo
 
 👉 Poké-Dex on Netlify
 
 (Catch ’em all — anytime, anywhere!)
+
 
 🧠 Future Enhancements
 
@@ -75,7 +78,9 @@ Search any Pokémon, view detailed stats, discover abilities, and even hear thei
 
 🧢 Trainer mode (user profiles & favorites)
 
+
 ❤️ Credits
 Data powered by PokéAPI
+
 
 “Every Pokémon has a story — now you can explore them all.” 🌟
