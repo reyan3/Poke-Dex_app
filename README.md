@@ -33,14 +33,23 @@ Search any Pokémon, view detailed stats, discover abilities, and even hear thei
 💻 Tech Stack
 
 ⚛️ React.js	Core frontend framework
+
 🧭 React Router	Smooth navigation between pages
+
 🎨 Custom CSS	Clean, modern UI and animations
+
 🧩 React Icons	Beautiful icons for menus, modes & controls
+
 🔗 PokéAPI	Real-time Pokémon data source
+
 🕹️ New Additions (v2.0)
+
 ✨ Reimagined UI/UX with more polish and personality
+
 💫 Added shuffle functionality for random Pokémon browsing
+
 ⚙️ Enhanced animations and transitions for immersive interactions
+
 🌈 Better color palette, hover effects, and loading states
 
 🌐 Live Demo
@@ -50,9 +59,13 @@ Search any Pokémon, view detailed stats, discover abilities, and even hear thei
 (Catch ’em all — anytime, anywhere!)
 
 🧠 Future Enhancements
+
 🧩 Pokémon team builder feature
+
 🔊 Sound toggle and volume control
+
 📊 Comparison mode for Pokémon stats
+
 🧢 Trainer mode (user profiles & favorites)
 
 ❤️ Credits
