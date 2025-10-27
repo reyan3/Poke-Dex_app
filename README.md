@@ -6,7 +6,7 @@ A sleek, dynamic Pokémon Viewer App built with React that lets you explore the 
 Search any Pokémon, view detailed stats, discover abilities, and even hear their cries — all wrapped in a stunning, responsive UI with smooth animations and a shuffle feature that keeps things fresh every time you explore.
 
 🖼️ Preview
-<p align="center"> <img width="600" src="https://github.com/user-attachments/assets/0da1ee59-0b78-42bc-bfa9-b8d45ad18145" /> <img width="600" src="https://github.com/user-attachments/assets/ed23c126-38f0-4e2c-8c99-7d519a258868" /> <img width="600" src="https://github.com/user-attachments/assets/71491e21-c8d0-4f7c-94c4-a778081cbc59" /> <img width="600" src="https://github.com/user-attachments/assets/ce1b14f8-fe7f-40a0-9dec-ab2bd71cf31c" /> <img width="600" src="https://github.com/user-attachments/assets/91e95496-d316-4349-8960-74c38c47439c" /> </p>
+<img width="600" src="https://github.com/user-attachments/assets/0da1ee59-0b78-42bc-bfa9-b8d45ad18145" /> <img width="600" src="https://github.com/user-attachments/assets/ed23c126-38f0-4e2c-8c99-7d519a258868" /> <img width="600" src="https://github.com/user-attachments/assets/71491e21-c8d0-4f7c-94c4-a778081cbc59" /> <img width="600" src="https://github.com/user-attachments/assets/ce1b14f8-fe7f-40a0-9dec-ab2bd71cf31c" /> <img width="600" src="https://github.com/user-attachments/assets/91e95496-d316-4349-8960-74c38c47439c" />
 ✨ Features
 
 🔍 Search Pokémon instantly by name
@@ -47,23 +47,6 @@ Tool	Purpose
 👉 Poké-Dex on Netlify
 
 (Catch ’em all — anytime, anywhere!)
-
-🚀 Getting Started
-# Clone the repository
-git clone https://github.com/<your-username>/pok-e-dex.git
-
-# Navigate to project folder
-cd pok-e-dex
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm start
-
-
-Then open http://localhost:3000
- in your browser 🎉
 
 🧠 Future Enhancements
 
