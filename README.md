@@ -63,7 +63,7 @@ Search any Pokémon, view detailed stats, discover abilities, and even hear thei
 
 🌐 Live Demo
 
-👉 Poké-Dex on Netlify
+👉 [Poké-Dex on Netlify](https://poke-dexnew.netlify.app/)
 
 (Catch ’em all — anytime, anywhere!)
 
